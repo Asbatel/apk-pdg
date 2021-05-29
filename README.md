@@ -1,20 +1,21 @@
 # Welcome to Apk-pdg
 
-Androguard-based framework to create a Program Dependence Graph of an Android application (apk) and export it into a graph format.
+An Androguard-based framework to create a Program Dependence Graph (PDG) of an Android application (apk).
 
 # Program Dependence Graph
 
-- A graph that explicitly considers both data and control dependences. The data dependence represents the program’s appropriate data flow whereas the control dependence illustrates the program’s control flow relationships.
-- The combination of both dependences covers all the program’s computational parts, which leads to an efficient program’s optimization. 
+- A graph that considers both data and control dependences. The data dependence represents the program’s appropriate data flow whereas the control dependence illustrates the program’s control flow relationships.
+- The combination of both dependences covers all the program’s computational parts.
 
 # PDG Topology 
 
-- Program Dependence Graph’s nodes are represented as *Basic Blocks* while the edges represent both the data values and control conditions necessary to the execution of the node’s operations.
-- It is constructed from the *Androguard Analysis Object* and then converted into a *Networkx DiGraph*. The current supported format is *gpickle*.
+- The Program Dependence Graph’s nodes represent the *Basic Blocks* and the edges represent both the data values and control conditions necessary to the execution of the node’s operations.
+- The PDG is constructed from the *Androguard Analysis Object* and then converted into a *Networkx DiGraph*. 
+- The current supported format is *gpickle*.
 
 # Requirements
 
-The construction process depends on the following tool:
+The construction process uses the following tool:
 
    - **Androguard**: It is used for statically analyzing the target APK and extracting its contextual and structural data. (https://github.com/androguard/androguard)
     
