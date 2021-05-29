@@ -4,7 +4,7 @@ Androguard-based framework to create a Program Dependence Graph of an Android ap
 
 # Program Dependence Graph
 
-- A graph that explicitly considers both data and control dependences. Data dependence represents the program’s appropriate data flow whereas the control dependence illustrates the program’s control flow relationships.
+- A graph that explicitly considers both data and control dependences. The data dependence represents the program’s appropriate data flow whereas the control dependence illustrates the program’s control flow relationships.
 - The combination of both dependences covers all the program’s computational parts, which leads to an efficient program’s optimization. 
 
 # PDG Topology 
